@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.icon {
+    height: 40px;
+}
+
+.attribution {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.author-info {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto;
+}
