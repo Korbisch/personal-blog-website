@@ -1,2 +1,6 @@
 @import url(home-page.css);
 @import url(typography.css);
+
+body {
+    margin: 0;
+}

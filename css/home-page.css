@@ -1,19 +1,50 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    margin-top: 30px;
+body {
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 300px 6fr 1fr;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "wc wc wc wc wc wc wc wc"
+      "main main main main sd sd sd sd"
+      "ft ft ft ft ft ft ft ft";
 }
 
-.post {
-    border: 1px solid #ddd;
+header {
+    grid-area: hd;
+}
+
+main {
+    grid-area: main;
+    max-width: 960px;
+    margin: 0 50px;
     padding: 20px;
-    background-color: #f9f9f9;
     text-align: center;
 }
 
-.post-image img {
-    height: 100px;
+footer {
+    grid-area: ft;
+}
+
+aside {
+    grid-area: sd;
+}
+
+.welcome-section {
+    grid-area: wc;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.post {
+    display: flex;
+    margin-bottom: 20px;
+    text-align: left;
+    border-top: 1px solid #eaeaea;
+    padding: 20px;
 }
 
 header nav {
@@ -44,9 +75,25 @@ header nav li a:hover {
     background-color: #444;
 }
 
-main {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+button {
+    background-color: transparent;
+    border: none;
+    color: #c4c4c4;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.post-image {
+    height: 120px;
+    padding: 20px 20px;
+}
+
+div a {
+    color: inherit;
+    text-decoration: none;
 }

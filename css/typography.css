@@ -21,16 +21,15 @@ h3 {
 }
 
 p {
-    font-family: "Times New Roman", serif;
+    font-family: "Courier", serif;
     font-size: 16px;
     font-weight: 400;
 }
 
 p b {
-    color: red;
+    color: #3a3a3a;
     font-weight: bold;
-    font-family: "Verdana", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 p i {
