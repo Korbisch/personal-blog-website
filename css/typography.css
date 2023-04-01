@@ -1,5 +1,5 @@
 h1 {
-    font-family: "Arial", sans-serif;
+    font-family: "Courier", sans-serif;
     font-size: 48px;
     margin-bottom: 20px;
     font-weight: 200;
@@ -16,7 +16,7 @@ h2 {
 h3 {
     font-family: "Verdana", sans-serif;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 20px;
     margin: 20px 0;
 }
 
