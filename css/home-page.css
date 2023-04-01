@@ -16,7 +16,7 @@ header {
 main {
     grid-area: main;
     max-width: 960px;
-    margin: 0 50px;
+    margin: 50px 50px;
     padding: 20px;
     text-align: center;
 }
@@ -27,15 +27,34 @@ footer {
 
 aside {
     grid-area: sd;
+    margin-top: 50px;
 }
 
 .welcome-section {
     grid-area: wc;
     background: blanchedalmond;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     padding-left: 50px;
+}
+
+.welcome-image {
+    height: 200px;
+}
+
+.cta-button {
+    color: white;
+    background: black;
+    font-family: Verdana, sans-serif;
+    border-radius: 99em;
+    font-size: 16px;
+    padding: 10px 40px;
+}
+
+.cta-button:hover {
+    background: #232323;
 }
 
 .logo {
