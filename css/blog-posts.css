@@ -1,19 +1,17 @@
 @import url(typography.css);
 @import url(nav-bar.css);
 
-/*TODO: make mobile responsive*/
-
 body {
     margin: 0;
     text-align: center;
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px 1fr 350px 50px;
     grid-template-areas:
-          "hd"
-          "main"
-          "sd"
-          "ft";
+      "hd"
+      "main"
+      "sd"
+      "ft";
 }
 
 header {
@@ -22,6 +20,9 @@ header {
 
 main {
     grid-area: main;
+    padding: 20px;
+    display: inline-block;
+    overflow-x: auto;
 }
 
 aside {
@@ -30,10 +31,15 @@ aside {
 
 footer {
     grid-area: ft;
+    margin-bottom: 30px;
 }
 
 .logo {
     height: 50px;
+}
+
+figure {
+    margin: auto;
 }
 
 .post-image {
@@ -44,6 +50,11 @@ footer {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.attribution-link * {
+    color: black;
 }
 
 .avatar {
@@ -63,12 +74,52 @@ footer {
     margin: 0 auto;
 }
 
+.icon {
+    width: 10%;
+}
+
 /* Tablet screens */
 @media (min-width: 601px) and (max-width:900px) {
+    .author-info {
+        width: 350px;
+    }
 
+    .post-image {
+        max-width: 550px;
+    }
 }
 
 /* Desktop screens */
 @media (min-width: 901px) {
+    body {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 70px 4fr 100px;
+        grid-template-areas:
+          "hd hd hd hd hd hd hd hd"
+          "main main main main main sd sd sd"
+          "ft ft ft ft ft sd sd sd";
+    }
 
+    .author-info {
+        margin: 70px 20px 20px;
+        height: 400px;
+    }
+
+    .blog-post {
+        margin: 0 50px;
+    }
+
+    .icon {
+        width: 5%;
+    }
+
+    .post-image {
+        max-width: 700px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    figure {
+        margin-bottom: 50px;
+    }
 }

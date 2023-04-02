@@ -1,5 +1,5 @@
 body {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 70px 300px 6fr 1fr;
     grid-template-areas:
@@ -42,6 +42,10 @@ aside {
     padding-left: 50px;
 }
 
+.welcome-section-text {
+    padding: 5px;
+}
+
 .welcome-image {
     height: 200px;
 }
@@ -49,7 +53,7 @@ aside {
 .cta-button {
     color: white;
     background: black;
-    font-family: Verdana, sans-serif;
+    font-family: "Verdana", sans-serif;
     border-radius: 99em;
     font-size: 16px;
     padding: 10px 40px;
@@ -97,7 +101,7 @@ div a {
 }
 
 .topics-list {
-    font-family: Courier, sans-serif;
+    font-family: "Courier", sans-serif;
     color: #3a3a3a;
     font-size: 16px;
     list-style-type: none;
@@ -116,7 +120,7 @@ div a {
 /* Mobile screens */
 @media(max-width: 600px) {
     body {
-        display:grid;
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 50px 1fr 650px 300px 50px;
         grid-template-areas:
