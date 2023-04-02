@@ -78,8 +78,12 @@ figure {
     width: 10%;
 }
 
+.social-sharing a {
+    color: transparent;
+}
+
 /* Tablet screens */
-@media (min-width: 601px) and (max-width:900px) {
+@media (min-width: 601px) and (max-width: 900px) {
     .author-info {
         width: 350px;
     }
@@ -90,7 +94,7 @@ figure {
 }
 
 /* Desktop screens */
-@media (min-width: 901px) {
+@media(min-width: 901px) {
     body {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 70px 4fr 100px;

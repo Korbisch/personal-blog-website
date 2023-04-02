@@ -168,7 +168,7 @@ div a {
 }
 
 /* Tablet screens */
-@media (min-width: 601px) and (max-width:900px) {
+@media (min-width: 601px) and (max-width: 900px) {
     main {
         margin: 0;
     }
