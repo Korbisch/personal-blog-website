@@ -2,16 +2,42 @@
 @import url(nav-bar.css);
 
 /*TODO: make mobile responsive*/
-/*TODO: add grid layout*/
 
 body {
+    margin: 0;
     text-align: center;
-    margin-right: 200px;
-    margin-left: 200px;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 350px 50px;
+    grid-template-areas:
+          "hd"
+          "main"
+          "sd"
+          "ft";
+}
+
+header {
+    grid-area: hd;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: sd;
+}
+
+footer {
+    grid-area: ft;
 }
 
 .logo {
     height: 50px;
+}
+
+.post-image {
+    max-width: 300px;
 }
 
 .attribution {
@@ -35,4 +61,14 @@ body {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin: 0 auto;
+}
+
+/* Tablet screens */
+@media (min-width: 601px) and (max-width:900px) {
+
+}
+
+/* Desktop screens */
+@media (min-width: 901px) {
+
 }
