@@ -55,3 +55,10 @@ blockquote * {
     font-style: italic;
     font-size: 18px;
 }
+
+/* Mobile screens */
+@media(max-width: 600px) {
+    p {
+        font-size: 12px;
+    }
+}

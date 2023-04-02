@@ -116,3 +116,58 @@ div a {
     padding: 10px;
     margin: 5px;
 }
+
+/* Mobile screens */
+@media(max-width: 600px) {
+    body {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr 650px 300px 50px;
+        grid-template-areas:
+          "hd"
+          "wc"
+          "main"
+          "sd"
+          "ft";
+    }
+
+    main {
+        margin: 0;
+        padding: 0;
+    }
+
+    .welcome-section {
+        flex-direction: column;
+        padding: 0 50px;
+    }
+
+    .welcome-image {
+        margin: 50px 0;
+        max-height: 150px;
+    }
+
+    aside {
+        margin: 0 20px;
+    }
+
+    .post {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .post-image {
+        height: 76px;
+        width: 114px;
+        padding: 10px;
+    }
+
+    .post a p {
+        max-width: 300px;
+    }
+}
+
+/* Tablet screens */
+@media (min-width: 601px) and (max-width:900px) {
+
+}

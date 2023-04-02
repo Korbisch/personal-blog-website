@@ -21,3 +21,10 @@ header nav li a {
     padding: 15px;
     text-decoration: none;
 }
+
+/* Mobile screens */
+@media(max-width: 600px) {
+    header nav {
+        padding: 10px;
+    }
+}
